@@ -2,30 +2,45 @@ import { motion } from "framer-motion";
 import { VscCode } from "react-icons/vsc";
 
 const Projects = () => {
+  const projects = [
+    {
+      title: "News Headline Analyzer",
+      description: "Web Application for sentiment analysis using Flask and TensorFlow",
+      technologies: ["Python", "TensorFlow", "Scikit-Learn", "Flask", "HTML", "CSS", "Git"]
+    },
+    {
+      title: "AQI Prediction Web Application",
+      description: "Web Application for predicting air quality using Machine Learning.",
+      technologies: ["Python", "Scikit-Learn", "Flask", "HTML", "CSS", "JavaScript", "Git"]
+    }
+  ];
+
   return (
     <section id="projects" className="p-6 bg-transparent">
       <h2 className="text-3xl font-mono font-bold text-center mb-6 text-green-400">
         ls projects/
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {[1, 2, 3].map((project) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+        {projects.map((project) => (
           <motion.div
-            key={project}
+            key={project.title}
             className="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-green-500 transition-colors"
             whileHover={{ scale: 1.02 }}
           >
             <VscCode className="text-green-400 mb-4" size={24} />
-            <h3 className="text-xl font-bold font-mono">Project {project}</h3>
+            <h3 className="text-xl font-bold font-mono">{project.title}</h3>
             <p className="text-gray-400 mt-2">
-              A brief description of the project.
+              {project.description}
             </p>
-            <div className="flex gap-2 mt-4">
-              <span className="bg-gray-700 px-2 py-1 rounded text-sm">
-                React
-              </span>
-              <span className="bg-gray-700 px-2 py-1 rounded text-sm">
-                Tailwind
-              </span>
+            <div className="flex flex-wrap gap-2 mt-4">
+              {project.technologies.map((tech) => (
+                <span 
+                  key={tech} 
+                  className="bg-gray-700 px-2 py-1 rounded text-sm"
+                >
+                  {tech}
+                </span>
+              ))}
             </div>
           </motion.div>
         ))}

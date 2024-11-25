@@ -2,6 +2,11 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* Add this near the top of the file, after the imports */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Custom Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 10px;

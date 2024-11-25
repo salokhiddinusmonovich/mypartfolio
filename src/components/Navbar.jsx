@@ -7,12 +7,16 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full bg-gradient-to-b from-gray-900/30 to-gray-900/0 backdrop-blur-[2px] z-10">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-6">
-        <h1 className="text-2xl font-mono font-bold text-green-400">
-          ~/portfolio
-        </h1>
+        <a
+          href="#"
+          rel="noopener noreferrer"
+          className="text-green-400 hover:text-green-300 transition-colors"
+        >
+          <h1 className="text-2xl font-mono font-bold">~/portfolio</h1>
+        </a>
         <div className="flex items-center gap-6">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Atharva0045"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-400 hover:text-green-300 transition-colors"
@@ -20,7 +24,7 @@ const Navbar = () => {
             <FaGithub size={20} />
           </a>
           <a
-            href="https://leetcode.com/yourusername"
+            href="https://leetcode.com/u/eQF0zkNYmu/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-400 hover:text-green-300 transition-colors"
@@ -28,7 +32,7 @@ const Navbar = () => {
             <SiLeetcode size={20} />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/atharva045"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-400 hover:text-green-300 transition-colors"
@@ -36,14 +40,21 @@ const Navbar = () => {
             <RiLinkedinBoxFill size={22} />
           </a>
           <a
-            href="https://instagram.com/yourusername"
+            href="https://instagram.com/atharva045"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-400 hover:text-green-300 transition-colors"
           >
             <FaInstagram size={20} />
           </a>
-          <Terminal className="text-green-400" size={20} />
+          <a
+            href="https://github.com/Atharva0045/personal-portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-400 hover:text-green-300 transition-colors"
+          >
+            <Terminal size={20} />
+          </a>
         </div>
       </div>
     </nav>
