@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
-export default function Hero() {
+const Hero = () => {
   return (
     <section className="h-screen flex items-center justify-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-800/90 via-gray-900 to-black">
       <motion.div
@@ -14,7 +14,8 @@ export default function Hero() {
           Hi, I'm Atharva Aher
         </h1>
         <p className="mt-4 text-xl md:text-2xl font-mono text-gray-400">
-          $ whoami<br/>
+          $ whoami
+          <br />
           &gt; Aspiring Software Engineer
         </p>
         <div className="mt-6 flex gap-4 justify-center">
@@ -34,4 +35,6 @@ export default function Hero() {
       </motion.div>
     </section>
   );
-} 
+};
+
+export default Hero;
