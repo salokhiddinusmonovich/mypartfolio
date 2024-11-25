@@ -8,14 +8,14 @@ const Projects = () => {
       title: "News Headline Analyzer",
       description: "Web Application for sentiment analysis using Flask and TensorFlow",
       technologies: ["Python", "TensorFlow", "Scikit-Learn", "Flask", "HTML", "CSS", "Git"],
-      github: "https://github.com/yourusername/news-headline-analyzer",
+      github: "https://github.com/Atharva0045/Sentiment-Analysis-Using-Neural-Network",
       website: "https://sentiment-analysis-nn.koyeb.app/" // Leave empty if no website yet
     },
     {
       title: "AQI Prediction Web Application",
       description: "Web Application for predicting air quality using Machine Learning.",
       technologies: ["Python", "Scikit-Learn", "Flask", "HTML", "CSS", "JavaScript", "Git"],
-      github: "https://github.com/yourusername/aqi-prediction",
+      github: "https://github.com/Atharva0045/Air-Quality-Prediction",
       website: ""
     }
   ];
