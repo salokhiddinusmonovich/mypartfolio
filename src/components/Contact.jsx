@@ -48,7 +48,7 @@ const Contact = () => {
       <form 
         ref={form}
         onSubmit={handleSubmit} 
-        className="max-w-md mx-auto bg-gray-900 p-6 rounded-lg border border-gray-700"
+        className="max-w-md mx-auto bg-gray-900 p-4 md:p-6 rounded-lg border border-gray-700"
       >
         <input
           type="text"
@@ -78,7 +78,7 @@ const Contact = () => {
           Execute
         </button>
       </form>
-      <div className="flex justify-center mt-8 gap-6">
+      <div className="flex justify-center mt-6 md:mt-8 gap-6">
         <a
           href="https://github.com/Atharva0045"
           target="_blank"

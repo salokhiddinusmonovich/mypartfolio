@@ -7,15 +7,15 @@ const About = () => {
         cat about.py
       </h2>
       <div className="max-w-6xl mx-auto">
-        <div className="flex items-center gap-8">
+        <div className="flex flex-col md:flex-row items-center gap-8">
           <motion.img
             src="./Profile.jpeg"
             alt="Atharva Aher"
-            className="w-48 h-48 rounded-full border-4 border-green-500 flex-shrink-0 object-cover"
+            className="w-32 h-32 md:w-48 md:h-48 rounded-full border-4 border-green-500 flex-shrink-0 object-cover"
             whileHover={{ scale: 1.1 }}
           />
-          <div className="bg-gray-900 p-6 rounded-lg border border-gray-700 w-full">
-            <p className="text-lg leading-relaxed font-mono">
+          <div className="bg-gray-900 p-4 md:p-6 rounded-lg border border-gray-700 w-full">
+            <p className="text-sm md:text-lg leading-relaxed font-mono overflow-x-auto whitespace-pre">
               <span className="text-purple-400">class</span>{" "}
               <span className="text-yellow-400">Developer</span>:<br />
               &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">
