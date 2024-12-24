@@ -97,7 +97,7 @@ const Navbar = () => {
                 <span className="font-mono">GitHub</span>
               </a>
               <a
-                href="https://leetcode.com/u/eQF0zkNYmu/"
+                href="https://leetcode.com/u/Atharva0045"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-400 hover:text-green-300 transition-colors p-2 flex items-center gap-3"
