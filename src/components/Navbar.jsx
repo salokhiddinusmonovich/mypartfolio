@@ -1,9 +1,8 @@
-import { Terminal } from "lucide-react";
-import { FaGithub, FaInstagram } from "react-icons/fa";
+import { Terminal, Menu, X } from "lucide-react";
+import { FaGithub, FaTelegram } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { RiLinkedinBoxFill } from "react-icons/ri";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
@@ -17,19 +16,20 @@ const Navbar = () => {
           rel="noopener noreferrer"
           className="text-green-400 hover:text-green-300 transition-colors"
         >
-          <h1 className="text-lg sm:text-xl md:text-2xl font-mono font-bold">~/portfolio</h1>
+          <h1 className="text-lg sm:text-xl md:text-2xl font-mono font-bold">~/salo_kh</h1>
         </a>
 
-        <button 
+        <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="lg:hidden text-green-400 hover:text-green-300"
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
+        {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-4 xl:gap-6">
           <a
-            href="https://github.com/Atharva0045"
+            href="https://github.com/salokhiddinusmonovich"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-400 hover:text-green-300 transition-colors"
@@ -37,7 +37,7 @@ const Navbar = () => {
             <FaGithub size={20} />
           </a>
           <a
-            href="https://leetcode.com/u/Atharva0045"
+            href="https://leetcode.com/u/usmonovsalokhiddin/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-400 hover:text-green-300 transition-colors"
@@ -45,7 +45,7 @@ const Navbar = () => {
             <SiLeetcode size={20} />
           </a>
           <a
-            href="https://www.linkedin.com/in/atharva045"
+            href="https://www.linkedin.com/in/salokhiddin-usmonov-975735309/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-400 hover:text-green-300 transition-colors"
@@ -53,24 +53,17 @@ const Navbar = () => {
             <RiLinkedinBoxFill size={22} />
           </a>
           <a
-            href="https://instagram.com/atharva045"
+            href="https://t.me/salo_kh1ddin"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-400 hover:text-green-300 transition-colors"
           >
-            <FaInstagram size={20} />
-          </a>
-          <a
-            href="https://github.com/Atharva0045/personal-portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-green-400 hover:text-green-300 transition-colors"
-          >
-            <Terminal size={20} />
+            <FaTelegram size={20} />
           </a>
         </div>
       </div>
 
+      {/* Mobile Menu */}
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
@@ -88,7 +81,7 @@ const Navbar = () => {
               className="flex flex-col items-center gap-3 sm:gap-4 p-4"
             >
               <a
-                href="https://github.com/Atharva0045"
+                href="https://github.com/salokhiddinusmonovich"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-400 hover:text-green-300 transition-colors p-2 flex items-center gap-3"
@@ -97,7 +90,7 @@ const Navbar = () => {
                 <span className="font-mono">GitHub</span>
               </a>
               <a
-                href="https://leetcode.com/u/Atharva0045"
+                href="https://leetcode.com/u/usmonovsalokhiddin/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-400 hover:text-green-300 transition-colors p-2 flex items-center gap-3"
@@ -106,7 +99,7 @@ const Navbar = () => {
                 <span className="font-mono">LeetCode</span>
               </a>
               <a
-                href="https://www.linkedin.com/in/atharva045"
+                href="https://www.linkedin.com/in/salokhiddin-usmonov-975735309/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-400 hover:text-green-300 transition-colors p-2 flex items-center gap-3"
@@ -115,22 +108,13 @@ const Navbar = () => {
                 <span className="font-mono">LinkedIn</span>
               </a>
               <a
-                href="https://instagram.com/atharva045"
+                href="https://t.me/YOUR_CHANNEL"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-400 hover:text-green-300 transition-colors p-2 flex items-center gap-3"
               >
-                <FaInstagram size={24} />
-                <span className="font-mono">Instagram</span>
-              </a>
-              <a
-                href="https://github.com/Atharva0045/personal-portfolio"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-green-400 hover:text-green-300 transition-colors p-2 flex items-center gap-3"
-              >
-                <Terminal size={24} />
-                <span className="font-mono">Source</span>
+                <FaTelegram size={24} />
+                <span className="font-mono">Telegram</span>
               </a>
             </motion.div>
           </motion.div>

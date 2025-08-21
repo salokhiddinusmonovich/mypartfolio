@@ -11,12 +11,12 @@ const Hero = () => {
       >
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-mono font-extrabold">
           <span className="text-green-400">&gt; </span>
-          Hi, I'm Atharva Aher
+          Hi,I'm Usmonov Salokhiddin
         </h1>
         <p className="mt-3 sm:mt-4 text-base sm:text-lg md:text-xl lg:text-2xl font-mono text-gray-400">
           $ whoami
           <br />
-          &gt; Aspiring Software Engineer
+          &gt; Software Engineer 
         </p>
         <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
           <a
