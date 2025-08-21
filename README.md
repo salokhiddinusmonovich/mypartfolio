@@ -82,4 +82,4 @@ Give a ⭐️ if you've used the project code for your own portfolio
 
 ## 📧 Contact
 
-If you want to contact me, you can reach me through my portfolio website
+If you want to contact me, you can reach me through my portfolio website# mypartfolio
