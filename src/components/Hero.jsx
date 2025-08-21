@@ -25,12 +25,6 @@ const Hero = () => {
           >
             ./view-projects
           </a>
-          <a
-            href="#contact"
-            className="w-full sm:w-auto border border-green-500 px-4 sm:px-6 py-2 rounded-md font-mono text-green-500 hover:bg-green-500 hover:text-black transition-colors text-sm sm:text-base"
-          >
-            ./contact
-          </a>
         </div>
       </motion.div>
     </section>
